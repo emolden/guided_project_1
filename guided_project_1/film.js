@@ -19,4 +19,5 @@ fetch(`http://localhost:9001/api/films/${id}`)
     function updateFilmInfo (filmObject) {
         console.log(filmObject);
         console.log('release date: ', filmObject.release_date);
+        document.querySelector('#release_date').innerHTML = filmObject.release_date;
     }
