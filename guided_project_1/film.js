@@ -26,12 +26,12 @@ fetch(`http://localhost:9001/api/films/${id}/planets`)
 
     function updateCharacters (characterArray) {
         for(character of characterArray) {
-            document.querySelector('#characters').innerHTML += `<li>${character.name}</li>`
+            document.querySelector('#characters').innerHTML += `<li><a href="character.html?id=${character.id}">${character.name}</li>`
         }
     }
     
     function updatePlanets(planetArray) {
         for(planet of planetArray) {
-            document.querySelector('#planets').innerHTML += `<li>${planet.name}</li>`
+            document.querySelector('#planets').innerHTML += `<li><a href="/planet.html?id=${planet.id}">${planet.name}</a></li>`
         }
     }
