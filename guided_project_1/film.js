@@ -23,6 +23,7 @@ fetch(`http://localhost:9001/api/films/${id}/planets`)
         document.querySelector('#episode').innerHTML+= filmObject.episode_id;
 
     }
+    console.log('hello')
 
     function updateCharacters (characterArray) {
         for(character of characterArray) {
