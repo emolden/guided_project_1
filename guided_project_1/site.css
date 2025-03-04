@@ -121,3 +121,27 @@ section#films a {
   border-radius: 5px;
   border: 1px solid var(--dark2);
 }
+
+/* PLanet Page */
+h1#name {
+  margin-left: 10px;
+}
+/*Formatting the Table*/
+table {
+  table-layout: fixed;
+  display: inline-block;
+  width: 100%;
+  th {
+    padding: 20px ;
+  }
+  text-align: center;
+  border-collapse: collapse;
+  border: 3px solid skyblue;
+}
+
+h2#characters, h2#films {
+  display: inline;
+  position:relative;
+
+  padding-inline: 10px;
+}
