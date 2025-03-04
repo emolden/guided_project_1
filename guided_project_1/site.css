@@ -70,45 +70,55 @@ label {
 }
 
 /* Character page */
-h1#name {
+h1#name,
+h1#film {
   margin: 50px;
 }
 
-#generalInfo {
+#generalInfo,
+#generalFilmInfo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   border: 20px;
 }
 
-#generalInfo p {
+#generalInfo p,
+#generalFilmInfo h4 {
   padding: 20px;
   margin: 10px;
   color: var(--dark2);
   background-color: var(--light2);
 }
 
-#generalInfo span {
+#generalInfo span,
+#generalFilmInfo span {
   font-weight: bold;
   font-size: 1.1em;
 }
 
 section#planets,
 section#characters,
-section#films {
+section#films,
+section#homeworlds,
+section#movies {
   margin: 50px;
 }
 
 section#planets ul,
 section#characters ul,
-section#films ul {
+section#films ul,
+section#homeworlds ul,
+section#movies ul {
   list-style-type: none;
   padding: 0;
 }
 
 section#planets a,
 section#characters a,
-section#films a {
+section#films a,
+section#homeworlds a,
+section#movies a {
   display: inline-block;
   text-decoration: none;
   font-size: 1.1em;
