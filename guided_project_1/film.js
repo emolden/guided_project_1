@@ -15,6 +15,7 @@ fetch(`http://localhost:9001/api/films/${id}/planets`)
     .then(response => response.json())
     .then(data => updatePlanets(data))
     .catch((error) => console.error('Error: ', error));
+    console.log('another console.log!');
 
     function updateFilmInfo (filmObject) {
         document.querySelector('#release_date').innerHTML+= filmObject.release_date;
